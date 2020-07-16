@@ -95,9 +95,9 @@
 				<view class="unicorn-header2" style="margin-top: -1px;position: relative;top: -36px;padding: 0 10px;">
 					<swiper class="screen-swiper square-dot" :indicator-dots="true" :circular="false" :autoplay="false" interval="5000"
 					 duration="500" style="min-height: 200rpx;height: 420rpx;background-color: #FFFFFF;border-radius: 10px;;">
-						<swiper-item v-for="(item,index) in menuList" :key="index" class="unicorn-border-radius-swiper" style="background: transparent !important;">
+						<swiper-item  v-for="(item,index) in menuList" :key="index" class="unicorn-border-radius-swiper" style="background: transparent !important;">
 							<view class="cu-list grid col-5 no-border" style="background: transparent !important;">
-								<view class="cu-item" v-for="(itemsub,indexsub) in item" :key="indexsub" style="display: flex;align-items: center;justify-content: center;background: transparent !important;">
+								<view class="cu-item" @click="navTo(itemsub.path)" v-for="(itemsub,indexsub) in item" :key="indexsub" style="display: flex;align-items: center;justify-content: center;background: transparent !important;">
 									<image mode="aspectFill" :src="itemsub.url" style="width: 100rpx;height: 100rpx;margin-bottom: 10rpx;border-radius: 50%;background: transparent !important;"></image>
 									<text style="color: #000;">{{itemsub.name}}</text>
 								</view>
@@ -199,7 +199,7 @@
 					 duration="500" style="min-height: 200rpx;height: 420rpx;background-color: #FFFFFF;border-radius: 10px;;">
 						<swiper-item v-for="(item,index) in menuListyl" :key="index" class="unicorn-border-radius-swiper" style="background: transparent !important;">
 							<view class="cu-list grid col-5 no-border" style="background: transparent !important;">
-								<view class="cu-item" v-for="(itemsub,indexsub) in item" :key="indexsub" style="display: flex;align-items: center;justify-content: center;background: transparent !important;">
+								<view class="cu-item" @click="navTo(itemsub.path)" v-for="(itemsub,indexsub) in item" :key="indexsub" style="display: flex;align-items: center;justify-content: center;background: transparent !important;">
 									<image mode="aspectFill" :src="itemsub.url" style="width: 100rpx;height: 100rpx;margin-bottom: 10rpx;border-radius: 50%;background: transparent !important;"></image>
 									<text style="color: #000;">{{itemsub.name}}</text>
 								</view>
@@ -443,6 +443,12 @@
 				let id = item.title;
 				uni.navigateTo({
 					url: `/pages/product/product?id=${id}`
+				})
+			},
+			navTo(url){
+				debugger
+				uni.navigateTo({
+					url
 				})
 			}
 		}

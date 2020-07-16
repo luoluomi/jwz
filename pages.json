@@ -43,7 +43,24 @@
 				"navigationBarTitleText": "设置"
 			}
 		},
-
+		{
+			"path": "pages/coupons/index",
+			"style": {
+				"navigationBarTitleText": "领券中心"
+			}
+		},
+		{
+			"path": "pages/market/index",
+			"style": {
+				"navigationBarTitleText": "唯物超市"
+			}
+		},
+		{
+			"path": "pages/make/index",
+			"style": {
+				"navigationBarTitleText": "口腔"
+			}
+		},
 		{
 			"path": "pages/userinfo/userinfo",
 			"style": {

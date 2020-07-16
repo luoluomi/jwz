@@ -41,71 +41,49 @@ module.exports = {
 	menuList: [
 		[{
 			url: `${imgUrl}/static/images/bg/v6.png`,
-			name: "领券"
+			name: "领券",
+			path:'/pages/coupons/index?name=领券'
 		}, {
 			url: `${imgUrl}/static/images/bg/v8.png`,
-			name: "维物超市"
+			name: "维物超市",
+			path:"/pages/market/index?name=维物超市"
 		}, {
 			url: `${imgUrl}/static/images/bg/v9.png`,
-			name: "维物严选"
+			name: "维物严选",
+			path:"/pages/market/index?name=维物严选"
 		}, {
 			url: `${imgUrl}/static/images/bg/v10.png`,
-			name: "维物专供"
+			name: "维物专供",
+			path:"/pages/market/index?name=维物专供"
 		}, {
 			url: `${imgUrl}/static/images/bg/v5.png`,
 			name: "V5会员"
 		}, {
 			url: `${imgUrl}/static/images/bg/v3.png`,
-			name: "辅材电气"
+			name: "辅材电气",
+			path:"/pages/market/index?name=辅材电气"
 		}, {
 			url: `${imgUrl}/static/images/bg/v7.png`,
 			name: "全屋定制"
 		}, {
 			url: `${imgUrl}/static/images/bg/v2.png`,
-			name: "瓷砖洁具"
+			name: "瓷砖洁具",
+			path:"/pages/market/index"
 		}, {
 			url: `${imgUrl}/static/images/bg/v5.png`,
-			name: "金属玻璃"
+			name: "金属玻璃",
+			path:"/pages/market/index"
 		}, {
 			url: `${imgUrl}/static/images/bg/v6.png`,
-			name: "家具软装"
-		}],
-		[{
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "京东国际"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "京东拍卖"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "唯品会"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "沃尔玛"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "京东旅行"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "看病购药"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "拍拍二手"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "分享赚钱"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "种豆得豆"
-		}, {
-			url: "https://file.quanzz1314.top/jd-shop/list1.png",
-			name: "更多频道"
-		}],
+			name: "家具软装",
+			path:"/pages/market/index"
+		}]
 	],
 	menuListYl: [
 		[{
 			url: `${imgUrl}/static/images/bg/v6.png`,
-			name: "口腔"
+			name: "口腔",
+			path:"/pages/make/index?name=口腔"
 		}, {
 			url: `${imgUrl}/static/images/bg/v8.png`,
 			name: "体检"
